@@ -1,0 +1,30 @@
+.cabecalho {
+    text-align: center;
+    background-color: rgb(114, 110, 110);
+    font-family: 'Silkscreen', cursive;
+}
+
+img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-right: 95%;
+}
+
+.container {
+    margin-top: -180px;
+}
+
+.background {
+    background-color: black;
+}
+
+.menu {
+    font-size: larger;
+    padding: 50px;
+}
+
+a:link {
+    text-decoration: none;
+    
+}
