@@ -1,6 +1,6 @@
 .cabecalho {
     text-align: center;
-    background-color: rgba(66, 66, 66, 0.185);
+    background-color: rgb(0, 0, 0);
     font-family: 'Silkscreen', cursive;
     margin-top: -8px;
     margin-left: -8px;
@@ -20,9 +20,8 @@ img {
 }
 
 .bg {
-    background-image: url(WesleyL.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(243, 174, 174, 0.795);
+    overflow: hidden;
 }
 
 .menu {
@@ -34,3 +33,20 @@ a:link {
     text-decoration: none;
 }
 
+
+.footer {
+    background-color: aqua;
+}
+
+h1 {
+    font-family: 'Silkscreen', cursive;
+    color: purple;
+    text-align: center;
+}
+
+.text {
+    background: rgb(17, 17, 17);
+    margin-top: -1.5%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
