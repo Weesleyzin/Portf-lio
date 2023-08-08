@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+  }
+  
+  .header {
+    background: rgba(3, 3, 3, 0.521);
+    padding-inline: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 48px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding-block: 16px;
+  }
+  
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #820892;
+    cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #820892;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 750px) {
+    .hamburger {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(5, 5, 5, 0.863);
+      clip-path: circle(100px at 90% -18%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
+.bg {
+  background-color: rgb(10, 11, 14);
+}
+
+.container {
+    margin-top: -180px;
+}
+
+.painel {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    margin-right:  10%;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: auto;
+    height: 400px;
+    font-family: 'Silkscreen', cursive; 
+    border: 3px;
+    border-style: solid; color: rgb(46, 156, 184);
+}
+
+.titulo1 {
+    color: purple;
+    margin-left: 22%;
+    margin-top: 3%;
+}
+
+.text1 {
+    color: rgb(65, 219, 65);
+    text-align: center;
+    width: 500px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.painel2 {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    margin-right:  10%;
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 400px;
+    font-family: 'Silkscreen', cursive; 
+    border: 3px;
+    border-style: solid; color: rgb(46, 156, 184); 
+}
+
+.titulo2 {
+    color: purple;
+    margin-left: 58%;
+    margin-top: 3%;
+}
+
+.text2 {
+    color: rgb(65, 219, 65);
+    text-align: left;
+    width: 500px;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+
+.painel3 {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    margin-right:  10%;
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 400px;
+    font-family: 'Silkscreen', cursive; 
+    border: 3px;
+    border-style: solid; color: rgb(46, 156, 184); 
+}
+
+.titulo3 {
+    color: purple;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.text3 {
+    color: rgb(65, 219, 65);
+    text-align: center;
+    width: 500px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.icons {
+    margin-left: 8%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.livro {
+  width: 100px;
+  height: 100px;
+  margin-left: 80%;
+  margin-top: -12%;
+}
+
+.hicon {
+  display: flex;
+  margin-left: 5%;
+  margin-top: -25%;
+}
+
+.cicon {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 18%;
+}
+
+.jsicon {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 30%;
+}
+
+.fim {
+    background-color: black;
+    padding: 10px;
+    margin-top: 3%;
+    color: white;
+    
+}
+
+.dog {
+  width: 250px;
+  height: 250px;
+  margin-left: 65%;
+  margin-top: -25%;
+}
