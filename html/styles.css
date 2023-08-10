@@ -131,6 +131,7 @@
 
 .bg {
   background-color: rgb(10, 11, 14);
+  overflow-x: hidden;
 }
 
 .container {
@@ -147,11 +148,11 @@
     height: 400px;
     font-family: 'Silkscreen', cursive; 
     border: 3px;
-    border-style: solid; color: rgb(46, 156, 184);
+    border-style: solid; color: rgb(75, 8, 82);
 }
 
 .titulo1 {
-    color: purple;
+    color: rgb(255, 255, 255);
     margin-left: 22%;
     margin-top: 3%;
 }
@@ -173,11 +174,11 @@
     height: 400px;
     font-family: 'Silkscreen', cursive; 
     border: 3px;
-    border-style: solid; color: rgb(46, 156, 184); 
+    border-style: solid; color: rgb(75, 8, 82); 
 }
 
 .titulo2 {
-    color: purple;
+    color: rgb(255, 255, 255);
     margin-left: 58%;
     margin-top: 3%;
 }
@@ -199,11 +200,11 @@
     height: 400px;
     font-family: 'Silkscreen', cursive; 
     border: 3px;
-    border-style: solid; color: rgb(46, 156, 184); 
+    border-style: solid; color: rgb(75, 8, 82); 
 }
 
 .titulo3 {
-    color: purple;
+    color: rgb(255, 255, 255);
     margin-left: 20%;
     margin-top: 3%;
 }
@@ -216,12 +217,10 @@
     margin-top: 5%;
 }
 
-.icons {
-    margin-left: 8%;
-    width: 100%;
-    height: 100%;
+.simbolos {
+  width: auto;
+  height: auto;
 }
-
 
 .livro {
   width: 100px;
@@ -233,7 +232,7 @@
 .hicon {
   display: flex;
   margin-left: 5%;
-  margin-top: -25%;
+  margin-top: -24%;
 }
 
 .cicon {
@@ -261,4 +260,44 @@
   height: 250px;
   margin-left: 65%;
   margin-top: -25%;
+}
+
+.whats {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.insta {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: -5.5%;
+  margin-left: 19%;
+}
+
+.Twit {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-top: -7.5%;
+  margin-left: 28%;
+}
+
+.git {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: -7%;
+  margin-left: 38%;
+}
+
+.person {
+  width: 300px;
+  height: 300px;
+  margin-left: 60%;
+  margin-top: -25%;
+
 }
