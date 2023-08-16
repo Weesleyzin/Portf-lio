@@ -9,7 +9,7 @@
   }
   
   .header {
-    background: rgba(3, 3, 3, 0.336);
+    background: rgba(3, 3, 3, 0.712);
     padding-inline: 16px;
     position: fixed;
     top: 0;
@@ -68,11 +68,8 @@
     transition: 0.3s;
   }
   
-  
-
-
 .bg {
-  background-color: rgb(10, 11, 14);
+  background-color: rgb(15, 15, 15);
   overflow-x: hidden;
 }
 
@@ -259,7 +256,6 @@
 
 .credit {
   font-size: small;
-  font-family: 'Silkscreen', cursive; 
 }
 
 ::-webkit-scrollbar {
@@ -274,14 +270,15 @@
     .hamburger {
       display: block;
       z-index: 1;
+      margin-right: 10%;
     }
   
     .nav-list {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vh;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       background: rgba(5, 5, 5, 0.863);
       clip-path: circle(100px at 90% -18%);
       transition: 1s ease-out;
@@ -333,45 +330,53 @@
       transform: rotate(-135deg);
       top: -7px;
     }
+  
+.logo {
+  display: flex;
+  font-size: 20px;
+  width: 190px;
+  margin-left: -15%;
+}
 
-    .painel1 {
-    background: rgb(0, 0, 0);
-    padding: 10px;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 15%;
-    width: auto;
-    height: 600px;
-    font-family: 'Silkscreen', cursive;
-    border: 3px;
-    border-style: solid;
-    color: rgb(75, 8, 82);
-    overflow: hidden;
-  }
 
-  .titulo1 {
-    color: rgb(255, 255, 255);
-    margin-left: 40%;
-    margin-top: 3%;
-    width: auto;
-    text-align: left;
-  }
+.painel1 {
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 25%;
+  width: auto;
+  height: 500px;
+  font-family: 'Silkscreen', cursive;
+  border: 3px;
+  border-style: solid;
+  color: rgb(75, 8, 82);
+  overflow: hidden;
+}
 
-  .text1 {
-    color: rgb(65, 219, 65);
-    text-align: center;
-    width: auto;
-    margin-left: 5%;
-    margin-top: 5%;
-  }
+.titulo1 {
+  color: rgb(255, 255, 255);
+  margin-left: 40%;
+  margin-top: 3%;
+  width: auto;
+  text-align: left;
+}
 
-  .dog {
-    position: absolute;
-    display: flex;
-    width: 130px;
-    height: 130px;
-    margin-left: 25%;
-    margin-top: 5%;
+.text1 {
+  color: rgb(65, 219, 65);
+  text-align: center;
+  width: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.dog {
+  position: absolute;
+  display: flex;
+  width: 130px;
+  height: 130px;
+  margin-left: 25%;
+  margin-top: 5%;
 }
 
 .painel2 {
@@ -381,7 +386,7 @@
   margin-left: 5%;
   margin-top: 15%;
   width: auto;
-  height: 600px;
+  height: 530px;
   font-family: 'Silkscreen', cursive;
   border: 3px;
   border-style: solid;
@@ -391,7 +396,7 @@
 
 .titulo2 {
   color: rgb(255, 255, 255);
-  margin-left: 40%;
+  margin-left: 15%;
   margin-top: 3%;
   width: auto;
   text-align: left;
@@ -415,23 +420,23 @@
 
 .hicon {
   position: absolute;
-  display: flex;
+  flex-direction: column;
   margin-top: auto;
-  margin-left: 4%;
+  margin-left: 3%;
 }
 
 .cicon {
   position: absolute;
-  display: flex;
+  flex-direction: column;
   margin-top: auto;
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 .jsicon {
   position: absolute;
-  display: flex;
+  flex-direction: column;
   margin-top: auto;
-  margin-left: 45%;
+  margin-left: 58%;
 }
 
 .painel3 {
@@ -449,48 +454,54 @@
   overflow: hidden;
 }
 
+.titulo3 {
+  color: rgb(255, 255, 255);
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
 .text3 {
   color: rgb(65, 219, 65);
   text-align: center;
-  width: 350px;
-  margin-left: 5%;
+  width: 100%;
+  margin-left: 1%;
   margin-top: 5%;
 }
 
 .whats {
   position: absolute;
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 50px;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .insta {
   position: absolute;
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 50px;
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 26%;
 }
 
 .Twit {
   position: absolute;
   display: flex;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 65px;
   margin-top: 8%;
-  margin-left: 39%;
+  margin-left: 44%;
 }
 
 .git {
   position: absolute;
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 50px;
   margin-top: 10%;
-  margin-left: 57%;
+  margin-left: 65%;
 }
 
 .person {
@@ -502,11 +513,28 @@
   margin-top: 40%;
 }
 
-
-
-
+.simbolos {
+  margin-top: 15%;
+  column-gap: 10px;
+  display: flex;
+}
 
 
 
 
   }
+
+  @media (max-width:800px) {
+    .person {
+      display: none;
+    }
+
+    .dog {
+      display: none;
+    }
+
+    .livro {
+      display: none;
+    
+    }
+}
