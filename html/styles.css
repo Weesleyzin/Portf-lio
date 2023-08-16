@@ -9,7 +9,7 @@
   }
   
   .header {
-    background: rgba(3, 3, 3, 0.521);
+    background: rgba(3, 3, 3, 0.336);
     padding-inline: 16px;
     position: fixed;
     top: 0;
@@ -27,7 +27,9 @@
   }
   
   .logo {
-    font-size: 48px;
+    display: flex;
+    font-size: 20px;
+    
   }
   
   .nav-list {
@@ -35,11 +37,15 @@
     gap: 32px;
     list-style: none;
   }
-  
+
   .nav-list a {
     font-size: 18px;
     color: rgb(255, 255, 255);
     padding-block: 16px;
+  }
+  
+  .nav-list a:hover {
+    color: purple;
   }
   
   .hamburger {
@@ -62,72 +68,8 @@
     transition: 0.3s;
   }
   
-  @media (max-width: 750px) {
-    .hamburger {
-      display: block;
-      z-index: 1;
-    }
   
-    .nav-list {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(5, 5, 5, 0.863);
-      clip-path: circle(100px at 90% -18%);
-      transition: 1s ease-out;
-  
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      gap: 0;
-  
-      pointer-events: none;
-    }
-  
-    .nav-list a {
-      font-size: 24px;
-      opacity: 0;
-    }
-  
-    .nav-list li:nth-child(1) a {
-      transition: 0.5s 0.2s;
-    }
-  
-    .nav-list li:nth-child(2) a {
-      transition: 0.5s 0.4s;
-    }
-  
-    .nav-list li:nth-child(3) a {
-      transition: 0.5s 0.6s;
-    }
-  
-    .nav.active .nav-list {
-      clip-path: circle(1500px at 90% -15%);
-      pointer-events: all;
-    }
-  
-    .nav.active .nav-list a {
-      opacity: 1;
-    }
-  
-    .nav.active .hamburger {
-      position: fixed;
-      top: 26px;
-      right: 16px;
-      border-top-color: transparent;
-    }
-  
-    .nav.active .hamburger::before {
-      transform: rotate(135deg);
-    }
-  
-    .nav.active .hamburger::after {
-      transform: rotate(-135deg);
-      top: -7px;
-    }
-  }
+
 
 .bg {
   background-color: rgb(10, 11, 14);
@@ -138,7 +80,7 @@
     margin-top: -180px;
 }
 
-.painel {
+.painel1 {
     background: rgb(0, 0, 0);
     padding: 10px;
     margin-right:  10%;
@@ -155,6 +97,7 @@
     color: rgb(255, 255, 255);
     margin-left: 22%;
     margin-top: 3%;
+    width: auto;
 }
 
 .text1 {
@@ -223,81 +166,347 @@
 }
 
 .livro {
+  position: absolute;
+  display: flex;
   width: 100px;
   height: 100px;
-  margin-left: 80%;
-  margin-top: -12%;
+  margin-left: 65%;
 }
 
 .hicon {
+  position: absolute;
   display: flex;
-  margin-left: 5%;
-  margin-top: -24%;
+  margin-left: 4%;
+  margin-top: -20%;
 }
 
 .cicon {
+  position: absolute;
   display: flex;
-  margin-top: 2%;
-  margin-left: 18%;
+  margin-top: -10%;
+  margin-left: 15%;
 }
 
 .jsicon {
+  position: absolute;
   display: flex;
-  margin-top: 3%;
-  margin-left: 30%;
+  margin-top: -1%;
+  margin-left: 27%;
 }
 
-.fim {
-    background-color: black;
-    padding: 10px;
-    margin-top: 3%;
-    color: white;
-    
-}
 
 .dog {
+  position: absolute;
+  display: flex;
   width: 250px;
   height: 250px;
-  margin-left: 65%;
-  margin-top: -25%;
+  margin-left: 50%;
+  margin-top: -20%;
 }
 
 .whats {
+  position: absolute;
   display: flex;
   width: 60px;
   height: 60px;
   margin-top: 5%;
+  margin-left: 7%;
+}
+
+.insta {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: 5%;
+  margin-left: 14%;
+}
+
+.Twit {
+  position: absolute;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-top: 4%;
+  margin-left: 20%;
+}
+
+.git {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-left: 50%;
+  margin-top: -10%;
+}
+
+.fim {
+    background-color: black;
+    padding: 1.5%;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.credit {
+  font-size: small;
+  font-family: 'Silkscreen', cursive; 
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #820892;
+}
+
+@media screen and (max-width: 550px) {
+    .hamburger {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vh;
+      height: 100vh;
+      background: rgba(5, 5, 5, 0.863);
+      clip-path: circle(100px at 90% -18%);
+      transition: 1s ease-out;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+    .painel1 {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 15%;
+    width: auto;
+    height: 600px;
+    font-family: 'Silkscreen', cursive;
+    border: 3px;
+    border-style: solid;
+    color: rgb(75, 8, 82);
+    overflow: hidden;
+  }
+
+  .titulo1 {
+    color: rgb(255, 255, 255);
+    margin-left: 40%;
+    margin-top: 3%;
+    width: auto;
+    text-align: left;
+  }
+
+  .text1 {
+    color: rgb(65, 219, 65);
+    text-align: center;
+    width: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .dog {
+    position: absolute;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.painel2 {
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 15%;
+  width: auto;
+  height: 600px;
+  font-family: 'Silkscreen', cursive;
+  border: 3px;
+  border-style: solid;
+  color: rgb(75, 8, 82);
+  overflow: hidden;
+}
+
+.titulo2 {
+  color: rgb(255, 255, 255);
+  margin-left: 40%;
+  margin-top: 3%;
+  width: auto;
+  text-align: left;
+}
+
+.text2 {
+  color: rgb(65, 219, 65);
+  text-align: center;
+  width: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.livro {
+  position: absolute;
+  display: flex;
+  width: 0;
+  height: 0;
+  margin-left: 65%;
+}
+
+.hicon {
+  position: absolute;
+  display: flex;
+  margin-top: auto;
+  margin-left: 4%;
+}
+
+.cicon {
+  position: absolute;
+  display: flex;
+  margin-top: auto;
+  margin-left: 25%;
+}
+
+.jsicon {
+  position: absolute;
+  display: flex;
+  margin-top: auto;
+  margin-left: 45%;
+}
+
+.painel3 {
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 15%;
+  width: auto;
+  height: 306px;
+  font-family: 'Silkscreen', cursive;
+  border: 3px;
+  border-style: solid;
+  color: rgb(75, 8, 82);
+  overflow: hidden;
+}
+
+.text3 {
+  color: rgb(65, 219, 65);
+  text-align: center;
+  width: 350px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.whats {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: 10%;
   margin-left: 10%;
 }
 
 .insta {
+  position: absolute;
   display: flex;
   width: 60px;
   height: 60px;
-  margin-top: -5.5%;
-  margin-left: 19%;
+  margin-top: 10%;
+  margin-left: 25%;
 }
 
 .Twit {
+  position: absolute;
   display: flex;
   width: 80px;
   height: 80px;
-  margin-top: -7.5%;
-  margin-left: 28%;
+  margin-top: 8%;
+  margin-left: 39%;
 }
 
 .git {
+  position: absolute;
   display: flex;
   width: 60px;
   height: 60px;
-  margin-top: -7%;
-  margin-left: 38%;
+  margin-top: 10%;
+  margin-left: 57%;
 }
 
 .person {
-  width: 300px;
-  height: 300px;
-  margin-left: 60%;
-  margin-top: -25%;
-
+  position: absolute;
+  display: flex;
+  width: 180px;
+  height: 180px;
+  margin-left: 25%;
+  margin-top: 40%;
 }
+
+
+
+
+
+
+
+
+  }
